@@ -52,8 +52,8 @@ export default function Home({allEpisodes, episodes, latestEpisodes}: HomeProps)
                   <span>{episode.durationAsString}</span>
                 </div>
 
-                <button type="button">
-                  <img src="/play-green.svg" alt="Tocar episodio" onClick={() => play(episode)}/>
+                <button type="button" onClick={() => play(episode)}>
+                  <img src="/play-green.svg" alt="Tocar episodio" />
                 </button>
               </li>
             );
